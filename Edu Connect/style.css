@@ -1,0 +1,75 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.header-div{
+    display: flex;
+    background-image: url('back.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    position: sticky;
+    
+}
+
+.nav-text{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    padding-left: 30px;
+}
+
+.search-section{
+    text-align: center; 
+    padding-bottom: 10px; 
+    background-image: url('back.jpg'); 
+    background-size: cover; 
+    height: 550px;
+}
+
+.vertical-scrolling{
+    height: 350px;
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 30px;
+    
+
+}
+
+.uni-container,.uni-container1,.uni-container2{
+
+    border-color: antiquewhite;
+    border: 2px;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    background-color: #F3F4F6;
+    text-decoration: none;
+    white-space: normal;
+    text-overflow: ellipsis;
+    width: 225px;
+    animation: animaitonScroll 15s linear infinite;
+}
+
+.uni-container.a.h3{
+    text-decoration: none;
+}
+
+.uni-lists{
+    background-image: url('back1.jpg');
+    background-size: cover;
+}
+
+@keyframes animaitonScroll{
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
