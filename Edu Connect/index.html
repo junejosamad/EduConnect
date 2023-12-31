@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
     <title>Edu Connect</title>
-    
+    <script src="script.js"></script>
 </head>
 <body>
     <header style="position: sticky; z-index: 100; top: 0;">
@@ -25,9 +25,9 @@
             
         </nav>
         <div style="padding: 8px;">
-            <button type="button" class="login-btn" style="width: 70px; height: 30px; background-color: rgb(5, 250, 254);
-            border: 0px; border-radius: 5px;
-            ">Login</button>
+            <button type="button" class="login-btn" style="width: 70px; height: 30px; background-color:transparent;
+            border-radius: 5px; border-color: #9cc153;
+            " onclick="login()">Login</button>
         </div>
     </div>    
     </header>
@@ -44,12 +44,12 @@
             </div>
         </div>
         <div>
-            <input type="text" placeholder="Search Universities in Pakistan"  style="width: 600px; height: 37px; border: 0px; border-radius: 5px; border-color: rgb(5, 250, 254); background-color: transparent;">
-            <button type="button" class="search-btn" style="width: 140px; height: 40px;background-color: rgb(5, 250, 254); border: 0px; border-radius: 5px;" >Search</button>
+            <input id="search" type="text" placeholder="Search Universities in Pakistan"  style="width: 600px; height: 37px; border-radius: 5px; border-color:#9cc153; background-color: transparent;">
+            <button onclick="search()" type="button" class="search-btn" style="width: 140px; height: 40px;background-color: transparent;border-color: #9cc153; border-radius: 5px;" >Search</button>
         </div>
     </section>
     <section class="uni-lists">
-    <h3 style="padding-left: 20px; padding-top: 20px;" >Ranking Universities in Pakistan</h3>
+    <h3 style="padding-left: 20px; padding-top: 30px; color: white; margin-bottom: -25px;" >Ranking Universities in Pakistan</h3>
     <div class="vertical-scrolling">
         <div class = "uni-container1">
             <a href="">
@@ -146,14 +146,14 @@
                             border-radius: 5px;
                             height: 3px;
                             width: 535px;"
-                type="submit">Submit</button>
+                type="submit" onclick="submit()">Submit</button>
 
         </form>
     </section>
 
     <footer style="display: flex;height: 40px; background-color: #F3F4F6; padding-top: 20px; margin: auto; ">
         <div style="width: 50%;">
-            <p style="padding-left: 20px;">© 2024 Edu Connect — All Rights Reserved.</p>
+            <p style="padding-left: 20px; font-family: auto;">Copyright © 2024 Edu Connect — All Rights Reserved.</p>
         </div>
         <div style="width: 50%; padding-right: 15px; text-align: right;">
             <a href="">
